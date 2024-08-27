@@ -29,3 +29,5 @@ console.log(newString.trim());
 const url = "https://sanjana.com/sanjana%20dangi";
 
 console.log(url.replace("%20", "-"));
+
+console.log(url.includes('dangi'))
