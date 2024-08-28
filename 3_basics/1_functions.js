@@ -35,7 +35,8 @@ function sayMyName() {
   // console.log(loginUserMessage("sanjana"));
   // console.log(loginUserMessage("sanjana"));
   
-  function calculateCartPrice(val1, val2, ...num1) {
+
+  function calculateCartPrice(...num1) {     // rest operator or spread operator(...)
     return num1
   
   }
