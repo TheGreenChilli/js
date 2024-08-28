@@ -19,11 +19,11 @@ if (true) {
 
 
 function one() {
-  const username = "hitesh"
+  const username = "sanjana"
 
   function two() {
     const website = "youtube"
-    console.log(username);
+    // console.log(username);
 
   }
   // console.log(website);
@@ -32,14 +32,13 @@ function one() {
 
 }
 
-
-// one()
+one()
 
 if (true) {
-  const username = "hitesh"
-  if (username === "hitesh") {
+  const username = "sanjana"
+  if (username === "sanjana") {
     const website = " youtube"
-    //console.log(username + website);
+    // console.log(username + website);
   }
   // console.log(website);
 }
@@ -49,3 +48,14 @@ if (true) {
 
 // ++++++++++++++++ interesting +++++++++++++++++++++
 
+console.log(addone(5))
+
+function addone(num){
+    return num + 1
+}
+
+
+addTwo(5)   // it gives error because it uses function before declaration
+const addTwo = function(num){
+    return num + 2
+}
