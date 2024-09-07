@@ -1,4 +1,4 @@
-// switch (key) {
+// switch (key) {        // switch case is used for multiple value
 //   case value:
     
 //     break;
@@ -7,19 +7,19 @@
 //     break;
 // }
 
-const month = 3
+const month = "march"
 
 switch (month) {
-  case 1:
+  case "jan":
     console.log("January");
     break;
-  case 2:
+  case "feb":
     console.log("Feb")
     break;
-  case 3:
+  case "march":
     console.log("March")
     break;
-  case 4:
+  case "april":
     console.log("April")
     break;
 
@@ -28,3 +28,4 @@ switch (month) {
     break;
     
 }
+
