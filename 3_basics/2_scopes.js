@@ -1,3 +1,5 @@
+// scope this and arrow 
+
 
 // var c = 300
 
