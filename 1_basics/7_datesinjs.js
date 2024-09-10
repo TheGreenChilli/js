@@ -1,4 +1,4 @@
-// Dates
+// Date and time 
 
 let myDate = new Date()
 // console.log(myDate.toString());
@@ -31,3 +31,4 @@ console.log(newDate.getDay());
 newDate.toLocaleString("default", {
   weekday: "long",
 });
+
