@@ -1,3 +1,5 @@
+// scope this and arrow 
+
 const user = {
     username: "sanjana",
     price: 999,
