@@ -1,3 +1,5 @@
+// Taking parameters in functions
+
 function sayMyName() {
     console.log("s");
     console.log("a");
