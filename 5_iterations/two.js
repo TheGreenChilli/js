@@ -1,3 +1,6 @@
+// loops discussion
+
+
 
 let index = 0
 // while (index <= 10) {

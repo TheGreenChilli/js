@@ -1,3 +1,5 @@
+// loops discussion
+
 const myObject = {
   js: 'javascript',
   cpp: 'C++',

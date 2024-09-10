@@ -1,3 +1,5 @@
+// loops discussion
+
 // const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // const values = coding.forEach( (item) => {
