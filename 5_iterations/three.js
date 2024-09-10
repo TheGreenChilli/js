@@ -1,4 +1,4 @@
-// loops discussion
+// loops discussions
 
 // for of
 
