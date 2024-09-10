@@ -1,3 +1,5 @@
+// discussion on variables
+
 const accountId = 144553
 let accountEmail = "sanjana@google.com"
 var accountPassword = "12345"
