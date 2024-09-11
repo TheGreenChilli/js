@@ -4,11 +4,30 @@
   <meta charset="UTF-8">
   
   <title>DOM Learning</title>
+  <style>
+    .bg-black{
+      background-color: #212121;
+      color: #fff;  
+
+    }
+  </style>
 </head>
-<body>
-  <div class="bg-black">
-    <h1 class="heading">DOM Learning on chai aur code</h1>
-    <p>Lorem, ipsum dolor sit amet.</p>
+<body class="bg-black">
+  <div>
+    <h1 id="title" class="heading">DOM Learning on chai aur code <span style="display: none">test text</span></h1>
+    <h2>Lorem ipsum dolor sit</h2>
+    <h2>Lorem ipsum dolor sit</h2>
+    <h2>Lorem ipsum dolor sit</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <input type="password" name="" id="">
+
+    <ul>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+
+
   </div>
 </body>
 </html>
@@ -16,5 +35,36 @@
 
 <!-- methods  -->
 
-<!-- document.getElementById('firstHeading')
-document.getElementById('firstHeading').innerHTML = <h1>Chai aur code</h1> -->
+<!-- document.getElementById('title')
+document.getElementById('title').innerHTML = <h1>Chai aur code</h1> -->
+<!-- 
+document.getElementById('title').id
+document.getElementById('title').class
+document.getElementById('title').className
+document.getElementById('title').getAttribute('id')
+document.getElementById('title').getAttribute('class')
+document.getElementById('title').setAttribute('class', 'test')   // always overwrite
+document.getElementById('title').setAttribute('class', 'test heading')
+ -->
+
+ // ************** STYLE ***************
+
+<!-- title.style.backgroundcolor = 'green'
+title.style.padding = "15px"
+title.style.borderRadius = "15px" -->
+
+
+// ************* DIFFRENCE ******************
+
+<!-- 
+title.innerText    // it gives those text which is visible
+title.textcontent  // it gives all the content along with hidden text
+title.innerHTML    // it gives all the values of html -->
+
+// ************* QUERY SELECTOR **************
+
+document.querySelector('h2')
+document.querySelector('#title')
+document.querySelector('.heading')
+document.querySelector('input[type="password"]')
+document.querySelector('p:first-child')
