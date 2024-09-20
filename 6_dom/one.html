@@ -22,9 +22,10 @@
     <input type="password" name="" id="">
 
     <ul>
-      <li>one</li>
-      <li>two</li>
-      <li>three</li>
+      <li class = "list-item">one</li>
+      <li class = "list-item">two</li>
+      <li class = "list-item">three</li>
+      <li class = "list-item">four</li>
     </ul>
 
 
@@ -84,4 +85,26 @@ turnGreen.innerText =  "Hello" -->
 to change the color of fisrt element of a list
 
 const tempLiList = document.qyerySelectorAll('li')
-empLiList[0].style.color = "green" -->
+empLiList[0].style.color = "green" 
+
+const myH1 = document.querySelectoryALl('h1')
+myH1[0].style.color = 'green' -->
+
+<!-- tempLiList.forEach(function (l) {
+  l.style.background = 'green'
+}) -->
+
+<!-- document.getElementsByClassName('list-item')
+const tempClassList = document.getElementsByClassName('list-item')
+tempClassList
+tempClassList.forEach(function (li) {
+  console.log(li)
+}) -->
+
+<!-- how to convert html collection -->
+
+tempClassList
+Array.from(tempClassList)
+
+const myConvertedArray = Array.from(tempClassList)
+myConvertedArray
