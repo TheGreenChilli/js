@@ -28,5 +28,6 @@ form.addEventListener('submit', function(e) {
     } else {
       results.textContent = `Overweight: ${bmi}`;
     }
+    
   } 
 });
