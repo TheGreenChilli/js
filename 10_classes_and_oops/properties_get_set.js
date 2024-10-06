@@ -8,7 +8,8 @@ function User(email, password){
     },
     set: function(value){
       this._email = value
-    })
+    }
+  })
     Object.defineProperty(this, 'password', {
       get: function(){
         return this._pasasword.toUpperCase()
