@@ -78,3 +78,36 @@ for (let c = 0; c < cities.length; c++) {
   cityList.push(myCity);
 }
 console.log(cityList);
+
+
+
+
+// write a for loop that loops through the array 
+// ["green tea", "black tea", "chai", "oolong tea"]
+// and stops the lopp when it finds "chai".
+// store all teas before "chai"  in a new array named selectedTeas.
+
+let teas = ["green tea", "black tea", "chai", "oolong tea"];
+let selectedTeas = [];
+
+for (let i = 0; i < teas.length; i++) {
+  if (teas[i] === 'chai'){
+    break;
+  }
+  selectedTeas.push(teas[i]);
+}
+console.log(selectedTeas);
+
+// write a for loop that loops through the array
+// ["apple", "banana", "cherry", "elderberry"]
+// and skips "cherry" fruits in a new array names skippedFruits.
+
+let fruits = ["apple", "banana", "cherry", "elderberry"]
+let skippedFruits = [];
+
+
+
+
+use a for of loop to iterate through the array [1, 2, 4, 5]
+and store when the number '4' is found. store the numbers before 
+'4' in an array named 
