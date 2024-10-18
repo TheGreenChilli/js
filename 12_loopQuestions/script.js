@@ -105,9 +105,42 @@ console.log(selectedTeas);
 let fruits = ["apple", "banana", "cherry", "elderberry"]
 let skippedFruits = [];
 
+for (let i = 0; i < fruits.length; i++) {
+  if (fruits[i] === 'cherry' || fruits[i] == "Cherry"){
+    continue;
+  }
+  skippedFruits.push(fruits[i]);
+}
+console.log(skippedFruits);
 
 
+// use a for of loop to iterate through the array [1, 2, 4, 5]
+// and store when the number '4' is found. store the numbers before 
+// '4' in an array named smallNumbers.
 
-use a for of loop to iterate through the array [1, 2, 4, 5]
-and store when the number '4' is found. store the numbers before 
-'4' in an array named 
+let numbers = [1, 2, 3, 4, 5];
+let smallNumbers = [];
+
+for (const num of numbers) {
+  if  (num === 4) {
+    break;
+  }
+  smallNumbers.push(num);
+}
+console.log(smallNumbers); // [1, 2, 3]
+
+
+// use for-of loop to iterate through the array 
+// ["chai", "green tea", "herbal tea", "black tea"]
+// and skip "hearbal tea".store the other teas 
+// in an array named preferredTeas
+
+let teaTypes = ["chai", "green tea", "herbal tea", "black tea"];
+let preferredTeas = [];
+
+for (const tea of teaTypes) {
+  if  (tea === 'herbal tea') {
+    continue;
+}
+preferredTeas.push(tea);
+}
