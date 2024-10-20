@@ -80,8 +80,6 @@ for (let c = 0; c < cities.length; c++) {
 console.log(cityList);
 
 
-
-
 // write a for loop that loops through the array 
 // ["green tea", "black tea", "chai", "oolong tea"]
 // and stops the lopp when it finds "chai".
@@ -97,6 +95,7 @@ for (let i = 0; i < teas.length; i++) {
   selectedTeas.push(teas[i]);
 }
 console.log(selectedTeas);
+
 
 // write a for loop that loops through the array
 // ["apple", "banana", "cherry", "elderberry"]
@@ -144,3 +143,36 @@ for (const tea of teaTypes) {
 }
 preferredTeas.push(tea);
 }
+
+
+// use a for-in lop to loop through an object 
+// containing city populations.
+// stop the loop whne the ppulation of berlin 
+// is found and store all previous cities populations 
+// in a new object named cityPopulations.
+
+// let cityPopulations = {
+//   "London": 8900000,
+//   "New York": 8400000,
+//   "Berlin": 6500000,
+//   "Paris": 2140000
+// };
+
+
+let citiesPopulation = {
+    "London": 8900000,
+    "New York": 8400000,
+    "Berlin": 6500000,
+    "Paris": 2140000
+}
+
+let cityNewPopulations = {}
+console.log(Object.values(citiesPopulation));
+
+for (const city in citiesPopulation) {
+  if (city == "Berlin") {
+    break;
+  }
+
+  cityNewPopulations[city] = citiesPopulation[city]; 
+  }
