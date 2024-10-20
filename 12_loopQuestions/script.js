@@ -176,3 +176,102 @@ for (const city in citiesPopulation) {
 
   cityNewPopulations[city] = citiesPopulation[city]; 
   }
+
+
+/* use  a for-of loop to iterate through an object 
+ containing city population below 3 million and 
+ store the rest in a new object named largeCities
+
+
+  let worldCities = {
+    "Sydney": 5000000,
+    "Tokyo": 9000000,
+    "Berlin": 3500000,
+    "Paris": 2200000
+  }
+*/
+
+
+let worldCities= {
+  "Sydney": 5000000,
+  "Tokyo": 9000000,
+  "Berlin": 3500000,
+  "Paris": 2200000
+}
+
+let largeCities = {}
+
+for (const city in worldCities) {
+  if  (worldCities[city] >= 3000000) {
+    continue;
+  }
+  largeCities[city] = worldCities[city];
+}
+
+/* write a forEach loop that iterates through the 
+array ["earl grey", "green tea", "chai", "oolong tea"]
+stop the loop when chai is found, and store all previous
+tea types in na array named availableTeas */
+
+let  teaCollection = ["earl grey", "green tea", "chai", "oolong tea"];
+let  availableTeas = [];
+
+teaCollection.forEach(function(tea) {
+  if (tea == "chai") {
+    return;
+  }
+  availableTeas.push(tea);
+});
+console.log(availableTeas);
+
+
+/*  write a forEach loop that iterates through the array 
+["Berlin", "Tokyo", "Sydney", "Paris"]
+skip "Sydney"cand store the other cities in a new
+array named traveledCities
+*/
+
+let myWorldCities =  ["Berlin", "Tokyo", "Sydney", "Paris"];
+let  traveledCities = [];
+
+myWorldCities.forEach((city) => {
+  if (city == "Sydney") {
+    return;
+  }
+  traveledCities.push(city);
+});
+console.log(traveledCities);
+
+
+/* write a for loop that iterates through the array
+[2, 5, 7, 9]
+skip the value 7 and multiply the rest by 2.
+store the results in a new array named doubledNumbers
+*/
+
+let myNumbers =  [2, 5, 7, 9];
+let  doubledNumbers = [];
+for (let i = 0; i < myNumbers.length; i++){
+  if (myNumbers[i] == 7) { 
+    continue;
+  }
+  doubledNumbers.push(myNumbers[i] * 2);
+}
+
+
+/* use a forof loop to iterate through the aaray 
+["chai", "green tea", "black tea", "jasmine tea", "herbal tea"]
+and stop the when the length of the current tea name is greater than 10
+store the tea iterated over in an array named shortTeas
+*/
+
+let myTeas = ["chai", "green tea", "black tea", "jasmine tea", "herbal tea"];
+let shortTeas = [];
+
+for (const tea of myTeas) {
+  if (tea.length > 10) {
+    break;
+  }
+  shortTeas.push(tea);
+}
+
